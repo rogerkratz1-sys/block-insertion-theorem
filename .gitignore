@@ -1,0 +1,11 @@
+# virtual environment
+venv/
+
+# Python caches
+__pycache__/
+
+*.py[cod]
+
+*.egg-info/
+
+pip-wheel-metadata/
