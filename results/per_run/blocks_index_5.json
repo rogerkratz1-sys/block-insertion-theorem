@@ -1,0 +1,17 @@
+{
+  "index": 5,
+  "total_linear_extensions": 734,
+  "block_counts": [
+    [40, 2],
+    [62, 3],
+    [72, 4],
+    [36, 5]
+  ],
+  "contributions": [
+    [2, 40, 80],
+    [3, 62, 186],
+    [4, 72, 288],
+    [5, 36, 180]
+  ],
+  "verification_sum": 734
+}
