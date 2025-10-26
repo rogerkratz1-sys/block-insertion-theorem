@@ -1,0 +1,23 @@
+{
+  "algo": "enumerate_target_insertions",
+  "command": "python3 src/index1_blocksize_dp_poset_n8.py",
+  "commit_hash": "4d441f1",
+  "counts_by_block_size": {
+    "3": 6,
+    "4": 18,
+    "5": 30,
+    "6": 38,
+    "7": 38
+  },
+  "cpu_seconds": 0.0,
+  "host": "DESKTOP-3FM1A60",
+  "index": 1,
+  "instance": "dressing_poset",
+  "n": 8,
+  "notes": "enumeration run; printed block-size distribution",
+  "peak_mem_mb": null,
+  "target": 1,
+  "total_orderings": 734,
+  "verification_sum": 734,
+  "wall_seconds": 0.0
+}
