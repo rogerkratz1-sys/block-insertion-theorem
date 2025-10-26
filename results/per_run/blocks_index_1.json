@@ -1,7 +1,7 @@
 {
   "algo": "enumerate_target_insertions",
   "command": "python3 src/index1_blocksize_dp_poset_n8.py",
-  "commit_hash": "534a726",
+  "commit_hash": "55f77aa",
   "counts_by_block_size": {
     "3": 6,
     "4": 18,
