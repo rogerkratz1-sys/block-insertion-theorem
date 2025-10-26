@@ -1,1 +1,3 @@
-commit: <fill-in-commit-hash>
+repo: git@github.com:rogerkratz1-sys/block-insertion-theorem.git
+commit: 4d441f1
+2025-10-25T18:26:57-07:00
