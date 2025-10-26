@@ -22,7 +22,4 @@ Algorithms, examples, and implementation notes for the Block Insertion Theorem w
 
 ---
 
-### Quickstart
-1. Clone repository and enter directory:
-   ```bash
-   git clone <REPOSITORY_URL> && cd block-insertion-theorem
+
