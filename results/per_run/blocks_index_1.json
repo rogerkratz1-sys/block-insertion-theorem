@@ -1,9 +1,7 @@
 {
-  "index": 1,
-  "instance": "dressing_poset",
-  "n": 8,
   "algo": "enumerate_target_insertions",
-  "target": 1,
+  "command": "python3 src/index1_blocksize_dp_poset_n8.py",
+  "commit_hash": "21f146c",
   "counts_by_block_size": {
     "3": 6,
     "4": 18,
@@ -11,13 +9,15 @@
     "6": 38,
     "7": 38
   },
+  "cpu_seconds": 0.0,
+  "host": "DESKTOP-3FM1A60",
+  "index": 1,
+  "instance": "dressing_poset",
+  "n": 8,
+  "notes": "enumeration run; printed block-size distribution",
+  "peak_mem_mb": null,
+  "target": 1,
   "total_orderings": 734,
   "verification_sum": 734,
-  "command": "python3 src/index1_blocksize_dp_poset_n8.py",
-  "wall_seconds": 0.0,
-  "cpu_seconds": 0.0,
-  "peak_mem_mb": null,
-  "host": "DESKTOP-3FM1A60",
-  "commit_hash": "<fill-in-commit-hash>",
-  "notes": "enumeration run; printed block-size distribution"
+  "wall_seconds": 0.0
 }
