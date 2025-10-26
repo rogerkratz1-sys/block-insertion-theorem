@@ -1,0 +1,6 @@
+﻿{
+  "metadata": {"schemaVersion":"v1.0.0","generator":{"name":"manual","version":"0.0.0","commit":"none"},"created":"2025-10-25T00:00:00Z"},
+  "indicesConvention":{"base":0,"inclusiveUpper":false},
+  "blocks":[{"id":"b1","length":3,"content":"abc"}],
+  "operations":[{"opId":"o1","type":"insert","sourceBlock":"b1","targetIndex":0}]
+}
