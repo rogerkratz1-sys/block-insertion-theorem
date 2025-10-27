@@ -1,0 +1,10 @@
+﻿cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+title: block-insertion-theorem
+version: v1.0.0
+doi: 10.5281/zenodo.17451500
+date-released: 2025-10-26
+authors:
+  - family-names: Kratz
+    given-names: Roger
+repository-code: https://github.com/rogerkratz1-sys/block-insertion-theorem
