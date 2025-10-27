@@ -1,4 +1,4 @@
-﻿# block-insertion-theorem
+# block-insertion-theorem
 
 Contains a JSON Schema at schema/block-insertion.schema.json, and example fixtures in data/examples.
 
