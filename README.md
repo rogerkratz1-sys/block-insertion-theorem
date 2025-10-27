@@ -1,4 +1,6 @@
-﻿# block-insertion-theorem
+﻿[![DOI](https://zenodo.org/badge/428375523.svg)](https://zenodo.org/badge/latestdoi/428375523)
+
+# block-insertion-theorem
 
 Contains a JSON Schema at schema/block-insertion.schema.json, and example fixtures in data/examples.
 
@@ -12,9 +14,13 @@ Get-Content schema\block-insertion.schema.json -Raw | Out-String | ConvertFrom-J
 Repository snapshot: https://github.com/rogerkratz1-sys/block-insertion-theorem.git  
 DOI: 10.5281/zenodo.17451500  
 Version: v1.0.0  
-Commit: 61ef5c7a6e3c478617809ee0a7fe1fed398027ef  
+Commit: 075948ad96d5063bfbf5d38fde75e74c6927a4d5
 
 To reproduce or verify this snapshot:
 git clone https://github.com/rogerkratz1-sys/block-insertion-theorem.git
 cd block-insertion-theorem
-git checkout 61ef5c7a6e3c478617809ee0a7fe1fed398027ef
+git checkout 075948ad96d5063bfbf5d38fde75e74c6927a4d5
+
+## Citation
+Kratz R. block-insertion-theorem v1.0.0. Zenodo. 2025. DOI: 10.5281/zenodo.17451500. Commit: 075948ad96d5063bfbf5d38fde75e74c6927a4d5. Repository: https://github.com/rogerkratz1-sys/block-insertion-theorem.
+
