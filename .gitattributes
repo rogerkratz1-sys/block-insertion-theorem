@@ -1,0 +1,2 @@
+﻿# Treat Word files as binary to avoid EOL conversions and spurious diffs
+*.docx binary -text
