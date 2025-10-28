@@ -10,3 +10,30 @@ block-insertion-theorem is a reproducible reference implementation of a combinat
 - ci (or .github/workflows) should contain schema validation and unit tests that run the example fixtures and the Monte Carlo smoke test.
 - appendix contains metadata files for release: **CITATION.md**, **CHECKSUMS.md**, **CONTACT.md**, and a DOI/commit record for archival provenance.
 To validate locally use the provided PowerShell validation examples, and to reproduce statistical results run the exact_inference and monte_carlo scripts with the documented parameters and seeds.
+
+### Quick start
+
+
+**Usage and validation commands**
+
+
+- PowerShell schema validation: Get-Content schema\block-insertion.schema.json -Raw | Out-String | ConvertFrom-Json > ; Write-Output 'schema OK'
+
+
+- PowerShell fixture parse check: Get-Content data\examples\example-001.json -Raw | Out-String | ConvertFrom-Json > ; Write-Output 'parsed OK'
+
+
+- Run checksum verifier: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force; .\verify-checksums.ps1
+
+
+**Reproduce exact release snapshot**
+
+
+- git clone https://github.com/rogerkratz1-sys/block-insertion-theorem.git; cd block-insertion-theorem; git checkout 075948ad96d5063bfbf5d38fde75e74c6927a4d5
+
+
+**Citation DOI**
+
+
+- Kratz R. block-insertion-theorem v1.0.0. Zenodo. 2025. DOI: 10.5281/zenodo.17451500.
+
