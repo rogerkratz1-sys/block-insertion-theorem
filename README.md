@@ -1,33 +1,12 @@
-﻿[![DOI](https://zenodo.org/badge/428375523.svg)](https://zenodo.org/badge/latestdoi/428375523)
+﻿### Project overview
 
-# block-insertion-theorem
+block-insertion-theorem is a reproducible reference implementation of a combinatorial/statistical result about block insertion and pairwise relations. The repository provides a formal JSON schema for the block‑insertion data model, example fixtures that demonstrate minimal and maximal valid records, exact‑inference scripts that compute hypergeometric/binomial probabilities and p‑values, and a Monte Carlo routine to validate analytic moments and tail probabilities. The release is archival (Zenodo DOI recorded in the README) and includes verification tooling to validate release binaries and checksums so reviewers can confirm provenance and integrity. This project is intended for researchers and reviewers who require exact inference, reproducible examples, and archival metadata for long‑term citation.
 
-Contains a JSON Schema at schema/block-insertion.schema.json, and example fixtures in data/examples.
+### Repository organization
 
-Validate a fixture with PowerShell:
-Get-Content data\examples\example-001.json -Raw | Out-String | ConvertFrom-Json > ; Write-Output 'parsed OK'
-
-Validate schema syntax with PowerShell:
-Get-Content schema\block-insertion.schema.json -Raw | Out-String | ConvertFrom-Json > ; Write-Output 'schema OK'
-## Reproducibility
-
-
-> Note: To verify the appendix binaries, run the included verifier from the repository root:
-> 
-> PowerShell: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force; .\verify-checksums.ps1
-> 
-> The script prints OK/MISMATCH for each file and sets the process exit code to 0 on success.
-Repository snapshot: https://github.com/rogerkratz1-sys/block-insertion-theorem.git  
-DOI: 10.5281/zenodo.17451500  
-Version: v1.0.0  
-Commit: 075948ad96d5063bfbf5d38fde75e74c6927a4d5
-
-To reproduce or verify this snapshot:
-git clone https://github.com/rogerkratz1-sys/block-insertion-theorem.git
-cd block-insertion-theorem
-git checkout 075948ad96d5063bfbf5d38fde75e74c6927a4d5
-
-## Citation
-Kratz R. block-insertion-theorem v1.0.0. Zenodo. 2025. DOI: 10.5281/zenodo.17451500. Commit: 075948ad96d5063bfbf5d38fde75e74c6927a4d5. Repository: https://github.com/rogerkratz1-sys/block-insertion-theorem.
-
-
+- schema contains the authoritative JSON Schema: **schema/block-insertion.schema.json**; use it to validate any example or produced record.
+- data/examples contains example fixtures including minimal and maximal valid records used for CI and manual checks.
+- scripts contains analysis and utility scripts: **exact_inference.py** (hypergeometric/binomial pmf and exact p‑value calculator), **monte_carlo.py** (empirical p‑value simulations with seed control), and **verify-checksums.ps1** (verifier for appendix binaries).
+- ci (or .github/workflows) should contain schema validation and unit tests that run the example fixtures and the Monte Carlo smoke test.
+- appendix contains metadata files for release: **CITATION.md**, **CHECKSUMS.md**, **CONTACT.md**, and a DOI/commit record for archival provenance.
+To validate locally use the provided PowerShell validation examples, and to reproduce statistical results run the exact_inference and monte_carlo scripts with the documented parameters and seeds.
