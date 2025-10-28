@@ -37,3 +37,11 @@ To validate locally use the provided PowerShell validation examples, and to repr
 
 - Kratz R. block-insertion-theorem v1.0.0. Zenodo. 2025. DOI: 10.5281/zenodo.17451500.
 
+
+[![CI](https://github.com/rogerkratz1-sys/block-insertion-theorem/actions/workflows/ci.yml/badge.svg)](https://github.com/rogerkratz1-sys/block-insertion-theorem/actions)
+
+
+### License
+
+This repository is released under the MIT License. See the LICENSE file at the repository root for the full text and permissions.
+
