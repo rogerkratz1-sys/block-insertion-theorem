@@ -1,0 +1,18 @@
+﻿# Normalize most text to LF
+* text=auto eol=lf
+
+# Force LF for Markdown, JSON, YAML, and code
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+
+# Keep PowerShell scripts with CRLF for Windows-friendly execution
+*.ps1 text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.pdf binary

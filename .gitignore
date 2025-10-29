@@ -9,3 +9,7 @@ __pycache__/
 *.egg-info/
 
 pip-wheel-metadata/
+
+results/per_run/*.bak
+results/per_run/*.fixed.json
+docs/*.bak
