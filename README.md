@@ -45,3 +45,5 @@ To validate locally use the provided PowerShell validation examples, and to repr
 
 This repository is released under the MIT License. See the LICENSE file at the repository root for the full text and permissions.
 
+
+<!-- README refreshed on 2025-10-29T18:20:57.2922476-07:00 -->
