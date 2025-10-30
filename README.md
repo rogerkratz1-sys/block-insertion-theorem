@@ -19,3 +19,5 @@ block-insertion-theorem is a reproducible reference implementation of a combinat
 - Validate schema (PowerShell):
 ```powershell
 Get-Content schema\block-insertion.schema.json -Raw | Out-String | ConvertFrom-Json > $null; Write-Output 'schema OK'
+
+<!-- README: clarify scope and remove stats; edited 2025-10-29T18:54:41.5932562-07:00 -->
